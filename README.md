@@ -9,9 +9,9 @@ Put each of this in side a folder call hooks
 
 I need to highlight these ==very important words==.
 
-H~2~O
+H~2O
 
-X^2^
+X^2
 
 - [x] Write the press release
 - [ ] Update the website
