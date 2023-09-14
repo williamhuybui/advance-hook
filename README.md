@@ -8,8 +8,11 @@ Put each of this in side a folder call hooks
 | Paragraph | Text |
 
 I need to highlight these ==very important words==.
+
 H~2~O
+
 X^2^
+
 - [x] Write the press release
 - [ ] Update the website
 - [ ] Contact the media
