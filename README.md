@@ -74,6 +74,8 @@ simplify use state, put all the state inside a dictionary. Have one function to 
 
 ### Theory
 reducer = (state, action) => newState
+
 action = {type, payload}
+
 dispatch(action) //calls reducer to calculate the new state
 
