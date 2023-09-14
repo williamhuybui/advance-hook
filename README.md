@@ -1,5 +1,5 @@
 # Custom hooks
-The point of this is to moduolize state, useEffect, and callback functions for each event inside a single function.
+The point of this is to moduolize state, **useEffect**, and callback functions for each event inside a single function.
 Put each of this in side a folder call hooks
 ### Local storage:
 ```
