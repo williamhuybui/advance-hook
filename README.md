@@ -1,32 +1,15 @@
 # Custom hooks
 The point of this is to moduolize state, **useEffect**, and callback functions for each event inside a single function.
 Put each of this in side a folder call hooks
-
-| Syntax | Description |
-| ----------- | ----------- |
-| Header | Title |
-| Paragraph | Text |
-
-I need to highlight these ==very important words==.
-
-H~2O
-
-X^2
-
-- [x] Write the press release
-- [ ] Update the website
-- [ ] Contact the media
-
-That is so funny! :joy:
 ### Local storage:
-```
+```javascript
 const[name, setName] = useState(() => window.localStorage.getItem("name") || "")
 useEffect(() => {
     window.localStorage.setItem("name", name)
 }, [name])
 ```
 ### Custom hook: make the above process reusable
-```
+```javascript
 function useLocalStorageState(key, defaultValue= ""){
     const[state, setState] = useState(() => window.localStorage.getItem(key) || defaultValue)
     useEffect(() => {window.localStorage.setItem(key, state)}, [key, state]);
@@ -43,7 +26,7 @@ But what if you want the state on one component affect the other sibling compone
 
 # useRef
 In React, you cant really use document.selectById("id") to select an element. Unlike html, React render dom and js at the same time, so the element might not be there yet.
-```
+```javascript
 import React, {useRef} from "react"
 const inputRef = useRef();
 
@@ -55,7 +38,7 @@ with this, you basically have access to the input element, and you can do whatev
 
 # useContext
 Passing props down to each component is a pain if you have a deep tree, so we use context to pass props down to each component.
-```
+```javascript
 //Inside App
 import createContext from "react"
 export const CartContext = createContext();
